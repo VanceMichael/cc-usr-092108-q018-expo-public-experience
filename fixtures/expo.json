@@ -1,0 +1,162 @@
+{
+  "domain": "expo-public-experience",
+  "version": 2,
+  "sample_id": "sample-018",
+  "openingDay": "2026-09-26",
+  "timezone": "+08:00",
+  "aiCatalogTotal": 520,
+  "note": "公众开放日虚构样例：未来空间、AI商品（目录共520款，下列为代表性展品）、东盟成员国展区。无真实个人信息。展位上的体验单元（模型/样机/仅展示品）与可售批次（现货/预售）分开建模。",
+  "zones": [
+    { "id": "Z-FS", "name": "未来空间" },
+    { "id": "Z-AI", "name": "AI商品体验区" },
+    { "id": "Z-MS", "name": "东盟成员国展区" }
+  ],
+  "exhibitors": [
+    { "id": "E-FS-01", "name": "星河航天" },
+    { "id": "E-AI-01", "name": "智伴科技" },
+    { "id": "E-AI-02", "name": "康护智能" },
+    { "id": "E-AI-03", "name": "灵眸影像" },
+    { "id": "E-MS-TH", "name": "泰国气象局" },
+    { "id": "E-MS-MY", "name": "马来西亚气象局" }
+  ],
+  "pickupPoints": [
+    { "id": "P-FS", "zoneId": "Z-FS", "name": "未来空间提货服务处" },
+    { "id": "P-AI", "zoneId": "Z-AI", "name": "AI商品集中提货处（A馆）" },
+    { "id": "P-MS", "zoneId": "Z-MS", "name": "成员国展区服务台" }
+  ],
+  "booths": [
+    { "id": "B-FS-01", "zoneId": "Z-FS", "exhibitorId": "E-FS-01", "name": "星河航天商业航天展台", "capacity": 20 },
+    { "id": "B-AI-01", "zoneId": "Z-AI", "exhibitorId": "E-AI-01", "name": "智伴科技体验店", "capacity": 30 },
+    { "id": "B-AI-02", "zoneId": "Z-AI", "exhibitorId": "E-AI-02", "name": "康护智能健康体验角", "capacity": 12 },
+    { "id": "B-AI-03", "zoneId": "Z-AI", "exhibitorId": "E-AI-03", "name": "灵眸影像AR体验区", "capacity": 24 },
+    { "id": "B-MS-TH", "zoneId": "Z-MS", "exhibitorId": "E-MS-TH", "name": "泰国气象署设备讲解点", "capacity": 16 },
+    { "id": "B-MS-MY", "zoneId": "Z-MS", "exhibitorId": "E-MS-MY", "name": "马来西亚气象部门设备讲解点", "capacity": 16 }
+  ],
+  "exhibits": [
+    {
+      "id": "X-FS-MODEL",
+      "boothId": "B-FS-01",
+      "modelCode": "CZ-8A-MODEL-150",
+      "name": "长征八号改运载火箭 1:50 仿真模型",
+      "disposition": "model",
+      "sellable": false,
+      "saleKinds": [],
+      "experience": null,
+      "priceVersions": []
+    },
+    {
+      "id": "X-FS-PROTO",
+      "boothId": "B-FS-01",
+      "modelCode": "RLV-SUBORBITAL-P0",
+      "name": "可重复使用亚轨道验证箭 工程样机",
+      "disposition": "prototype",
+      "sellable": false,
+      "saleKinds": [],
+      "experience": { "durationMin": 10, "perGroup": 6, "requirements": [] },
+      "priceVersions": []
+    },
+    {
+      "id": "X-AI-LEARN",
+      "boothId": "B-AI-01",
+      "modelCode": "ZIBAN-L1-2026",
+      "name": "智伴AI学习机 L1",
+      "disposition": "prototype",
+      "sellable": true,
+      "saleKinds": ["spot", "presale"],
+      "experience": { "durationMin": 8, "perGroup": 4, "requirements": [] },
+      "priceVersions": [
+        { "version": "PV-OPEN", "price": 2999, "currency": "CNY", "effectiveFrom": "2026-09-26T09:00:00+08:00" }
+      ]
+    },
+    {
+      "id": "X-AI-WATCH",
+      "boothId": "B-AI-02",
+      "modelCode": "KANGHU-H1",
+      "name": "康护健康监测手表 H1（体验采集心率/血氧等健康数据）",
+      "disposition": "prototype",
+      "sellable": true,
+      "saleKinds": ["spot"],
+      "experience": { "durationMin": 10, "perGroup": 2, "requirements": ["health-data"] },
+      "priceVersions": [
+        { "version": "PV-OPEN", "price": 1299, "currency": "CNY", "effectiveFrom": "2026-09-26T09:00:00+08:00" }
+      ]
+    },
+    {
+      "id": "X-AI-ROBOT",
+      "boothId": "B-AI-01",
+      "modelCode": "ZIBAN-R1",
+      "name": "智伴陪伴机器人 R1",
+      "disposition": "prototype",
+      "sellable": true,
+      "saleKinds": ["presale"],
+      "experience": { "durationMin": 8, "perGroup": 3, "requirements": ["minor-guardian"] },
+      "priceVersions": [
+        { "version": "PV-OPEN", "price": 1999, "currency": "CNY", "effectiveFrom": "2026-09-26T09:00:00+08:00" }
+      ]
+    },
+    {
+      "id": "X-AI-GLASS",
+      "boothId": "B-AI-03",
+      "modelCode": "LINGMOU-G1",
+      "name": "灵眸AR拍摄眼镜 G1",
+      "disposition": "prototype",
+      "sellable": true,
+      "saleKinds": ["spot"],
+      "experience": { "durationMin": 8, "perGroup": 4, "requirements": [] },
+      "priceVersions": [
+        { "version": "PV-OPEN", "price": 2499, "currency": "CNY", "effectiveFrom": "2026-09-26T09:00:00+08:00" }
+      ]
+    },
+    {
+      "id": "X-MS-STATION",
+      "boothId": "B-MS-TH",
+      "modelCode": "TH-AWS-3000",
+      "name": "泰国便携式自动气象站（样机，定时讲解）",
+      "disposition": "prototype",
+      "sellable": false,
+      "saleKinds": [],
+      "experience": { "durationMin": 15, "perGroup": 10, "requirements": [] },
+      "priceVersions": []
+    },
+    {
+      "id": "X-MS-RADAR",
+      "boothId": "B-MS-MY",
+      "modelCode": "MY-XBAND-R2",
+      "name": "马来西亚X波段气象雷达缩比样机（定时讲解）",
+      "disposition": "prototype",
+      "sellable": false,
+      "saleKinds": [],
+      "experience": { "durationMin": 15, "perGroup": 10, "requirements": [] },
+      "priceVersions": []
+    }
+  ],
+  "sessions": [
+    { "id": "S-FS-0930", "boothId": "B-FS-01", "exhibitId": "X-FS-PROTO", "name": "验证箭样机讲解 09:30", "start": "2026-09-26T09:30:00+08:00", "capacity": 6, "status": "scheduled" },
+    { "id": "S-FS-1030", "boothId": "B-FS-01", "exhibitId": "X-FS-PROTO", "name": "验证箭样机讲解 10:30", "start": "2026-09-26T10:30:00+08:00", "capacity": 6, "status": "scheduled" },
+    { "id": "S-AI1-0930", "boothId": "B-AI-01", "exhibitId": "X-AI-LEARN", "name": "学习机L1体验 09:30", "start": "2026-09-26T09:30:00+08:00", "capacity": 12, "status": "scheduled" },
+    { "id": "S-AI2-1000", "boothId": "B-AI-02", "exhibitId": "X-AI-WATCH", "name": "健康手表H1体验 10:00", "start": "2026-09-26T10:00:00+08:00", "capacity": 6, "status": "scheduled" },
+    { "id": "S-AI1-1100", "boothId": "B-AI-01", "exhibitId": "X-AI-ROBOT", "name": "陪伴机器人R1体验 11:00", "start": "2026-09-26T11:00:00+08:00", "capacity": 9, "status": "scheduled" },
+    { "id": "S-AI3-0950", "boothId": "B-AI-03", "exhibitId": "X-AI-GLASS", "name": "AR眼镜G1体验 09:50", "start": "2026-09-26T09:50:00+08:00", "capacity": 12, "status": "scheduled" },
+    { "id": "S-TH-1000", "boothId": "B-MS-TH", "exhibitId": "X-MS-STATION", "name": "泰国便携气象站讲解 10:00", "start": "2026-09-26T10:00:00+08:00", "capacity": 10, "status": "scheduled" },
+    { "id": "S-MY-1030", "boothId": "B-MS-MY", "exhibitId": "X-MS-RADAR", "name": "马来西亚X波段雷达讲解 10:30", "start": "2026-09-26T10:30:00+08:00", "capacity": 10, "status": "scheduled" }
+  ],
+  "batches": [
+    { "id": "BAT-L1-SPOT", "exhibitId": "X-AI-LEARN", "kind": "spot", "quantity": 20, "remaining": 20, "priceVersion": "PV-OPEN", "pickupPointId": "P-AI" },
+    { "id": "BAT-L1-PRE", "exhibitId": "X-AI-LEARN", "kind": "presale", "quantity": 50, "remaining": 50, "priceVersion": "PV-OPEN", "pickupPointId": "P-AI" },
+    { "id": "BAT-WATCH-SPOT", "exhibitId": "X-AI-WATCH", "kind": "spot", "quantity": 8, "remaining": 8, "priceVersion": "PV-OPEN", "pickupPointId": "P-AI" },
+    { "id": "BAT-ROBOT-PRE", "exhibitId": "X-AI-ROBOT", "kind": "presale", "quantity": 30, "remaining": 30, "priceVersion": "PV-OPEN", "pickupPointId": "P-AI" },
+    { "id": "BAT-GLASS-SPOT", "exhibitId": "X-AI-GLASS", "kind": "spot", "quantity": 12, "remaining": 12, "priceVersion": "PV-OPEN", "pickupPointId": "P-AI" }
+  ],
+  "visitors": [
+    { "id": "V-1001", "minor": false, "consents": { "guardian": false, "health": false } },
+    { "id": "V-1002", "minor": true, "consents": { "guardian": true, "health": false } },
+    { "id": "V-1003", "minor": true, "consents": { "guardian": false, "health": false } },
+    { "id": "V-1004", "minor": false, "consents": { "guardian": false, "health": true } },
+    { "id": "V-1005", "minor": false, "consents": { "guardian": false, "health": false } },
+    { "id": "V-1006", "minor": false, "consents": { "guardian": false, "health": false } },
+    { "id": "V-1007", "minor": false, "consents": { "guardian": false, "health": false } },
+    { "id": "V-1008", "minor": false, "consents": { "guardian": false, "health": false } },
+    { "id": "V-1009", "minor": false, "consents": { "guardian": false, "health": false } },
+    { "id": "V-1010", "minor": false, "consents": { "guardian": false, "health": false } }
+  ]
+}
