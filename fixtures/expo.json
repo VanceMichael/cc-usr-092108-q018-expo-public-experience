@@ -1,0 +1,47 @@
+{
+  "zones": [
+    { "id": "zone-future", "name": "未来空间展区", "capacity": 100 },
+    { "id": "zone-ai", "name": "人工智能商品展区", "capacity": 2 },
+    { "id": "zone-member", "name": "成员国展区", "capacity": 100 }
+  ],
+  "booths": [
+    { "id": "booth-rocket", "zoneId": "zone-future", "exhibitorId": "exh-rocket", "name": "商业航天模型展位" },
+    { "id": "booth-glasses", "zoneId": "zone-ai", "exhibitorId": "exh-glasses", "name": "AI眼镜展位" },
+    { "id": "booth-health", "zoneId": "zone-ai", "exhibitorId": "exh-health", "name": "AI健康手表展位" },
+    { "id": "booth-meteo", "zoneId": "zone-member", "exhibitorId": "exh-meteo", "name": "成员国气象设备展位" }
+  ],
+  "exhibits": [
+    { "id": "ex-rocket-model", "boothId": "booth-rocket", "kind": "model", "saleType": "display-only", "modelId": "rocket-y9", "name": "商业运载火箭Y9模型" },
+    { "id": "ex-glasses", "boothId": "booth-glasses", "kind": "product", "saleType": "in-stock", "modelId": "glasses-pro-2026", "name": "AI翻译眼镜Pro" },
+    { "id": "ex-watch", "boothId": "booth-health", "kind": "product", "saleType": "presale", "modelId": "watch-v2", "name": "AI健康手表V2", "collectsHealthData": true },
+    { "id": "ex-meteo", "boothId": "booth-meteo", "kind": "product", "saleType": "presale", "modelId": "meteo-9", "name": "便携式气象站M9" }
+  ],
+  "demoUnits": [
+    { "id": "du-glasses-1", "exhibitId": "ex-glasses", "name": "眼镜体验样机1号" },
+    { "id": "du-glasses-2", "exhibitId": "ex-glasses", "name": "眼镜体验样机2号" },
+    { "id": "du-watch-1", "exhibitId": "ex-watch", "name": "手表体验样机1号" }
+  ],
+  "priceVersions": [
+    { "id": "pv-glasses-1", "exhibitId": "ex-glasses", "label": "开展特惠价", "amountFen": 129900, "effectiveFrom": "2026-09-26T09:00:00+08:00" },
+    { "id": "pv-glasses-2", "exhibitId": "ex-glasses", "label": "日常价", "amountFen": 139900, "effectiveFrom": "2026-09-26T12:00:00+08:00" },
+    { "id": "pv-watch-1", "exhibitId": "ex-watch", "label": "预售优惠价", "amountFen": 89900, "effectiveFrom": "2026-09-26T09:00:00+08:00" },
+    { "id": "pv-meteo-1", "exhibitId": "ex-meteo", "label": "展会预订价", "amountFen": 459900, "effectiveFrom": "2026-09-26T09:00:00+08:00" }
+  ],
+  "batches": [
+    { "id": "batch-glasses-spot-1", "exhibitId": "ex-glasses", "type": "in-stock", "quantity": 2, "priceVersionId": "pv-glasses-1" },
+    { "id": "batch-glasses-spot-2", "exhibitId": "ex-glasses", "type": "in-stock", "quantity": 5, "priceVersionId": "pv-glasses-2" },
+    { "id": "batch-watch-presale", "exhibitId": "ex-watch", "type": "presale", "quantity": 100, "priceVersionId": "pv-watch-1" },
+    { "id": "batch-meteo-presale", "exhibitId": "ex-meteo", "type": "presale", "quantity": 50, "priceVersionId": "pv-meteo-1" }
+  ],
+  "sessions": [
+    { "id": "ses-glasses-1000", "boothId": "booth-glasses", "exhibitId": "ex-glasses", "demoUnitId": "du-glasses-1", "kind": "experience", "startsAt": "2026-09-26T10:00:00+08:00", "durationMin": 20, "capacity": 3 },
+    { "id": "ses-glasses-1100", "boothId": "booth-glasses", "exhibitId": "ex-glasses", "demoUnitId": "du-glasses-2", "kind": "experience", "startsAt": "2026-09-26T11:00:00+08:00", "durationMin": 20, "capacity": 1 },
+    { "id": "ses-watch-1030", "boothId": "booth-health", "exhibitId": "ex-watch", "demoUnitId": "du-watch-1", "kind": "experience", "collectsHealthData": true, "startsAt": "2026-09-26T10:30:00+08:00", "durationMin": 15, "capacity": 2 },
+    { "id": "ses-rocket-talk", "boothId": "booth-rocket", "exhibitId": "ex-rocket-model", "kind": "talk", "startsAt": "2026-09-26T10:30:00+08:00", "durationMin": 30, "capacity": 2 },
+    { "id": "ses-meteo-talk", "boothId": "booth-meteo", "exhibitId": "ex-meteo", "kind": "talk", "startsAt": "2026-09-26T15:00:00+08:00", "durationMin": 30, "capacity": 2 }
+  ],
+  "pickupPoints": [
+    { "id": "pk-ai", "zoneId": "zone-ai", "name": "AI展区提货点" },
+    { "id": "pk-member", "zoneId": "zone-member", "name": "成员国展区提货点" }
+  ]
+}
